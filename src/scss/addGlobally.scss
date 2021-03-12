@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  flex: 1 0 auto;
+}
+main {
+  height: 100%;
+}
+footer {
+  flex: 0 1 auto;
+}

@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 24px;
+  background-color: #000;
+  &__title {
+    color: #fff;
+    font-size: 1.4rem;
+    @include rob-400;
+  }
+}

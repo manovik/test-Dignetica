@@ -1,13 +1,10 @@
 @import './normalize.scss';
 @import './addGlobally.scss';
+@import './variables';
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap');
 
-.container {
-  max-width: 1300px;
-  width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
-.header {
-  height: 100px;
-}
+@import './header/header.scss';
+@import './main/search/search.scss';
+@import './main/search/results.scss';
+@import './main/search/result-item.scss';

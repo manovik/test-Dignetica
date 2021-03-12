@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,96 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="content-wrapper">
       <header class="header">
-        <p class="header__text">Шапка сайта</p>
+
+        <h1 class="header__title">Шапка сайта</h1>
+
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="search">
+          <div class="search__field">
+            <div class="search__field-box">
+              <input class="search__input" type="text">
+              <button class="search__btn search__btn--srch" type="button">найти</button>
+            </div>
+            <button class="search__btn search__btn--clz" type="button">закрыть</button>
+          </div>
+          <div class="search__results result">
+            <div class="result__top">
+              <h3 class="result__title">Результаты по запросу</h3>
+              <p class="result__text">
+                Показаны результаты для
+                "<span class="result__search-text">Запрос пользователя</span>".
+                Вы искали
+                "<span class="result__search-text"><span class="result__search-text--italic">Зопрос</span>
+                  пользователя</span>"
+              </p>
+            </div>
+            <div class="result__item item">
+              <div class="item__container">
+                <div class="item__wrapper">
+                  <div class="item__img-box">
+                    <img class="item__img" src="./img/23.jpg" alt="picture">
+                  </div>
+                  <div class="item__box">
+                    <h6 class="item__title">Название категории</h6>
+                    <p class="item__text">134 товара</p>
+                  </div>
+                </div>
+                <div class="item__wrapper">
+                  <div class="item__img-box">
+                    <img class="item__img" src="./img/23.jpg" alt="picture">
+                  </div>
+                  <div class="item__box">
+                    <h6 class="item__title">Название категории</h6>
+                    <p class="item__text">134 товара</p>
+                  </div>
+                </div>
+                <div class="item__wrapper">
+                  <div class="item__img-box">
+                    <img class="item__img" src="./img/23.jpg" alt="picture">
+                  </div>
+                  <div class="item__box">
+                    <h6 class="item__title">Название категории</h6>
+                    <p class="item__text">134 товара</p>
+                  </div>
+                </div>
+                <div class="item__wrapper">
+                  <div class="item__img-box">
+                    <img class="item__img" src="./img/23.jpg" alt="picture">
+                  </div>
+                  <div class="item__box">
+                    <h6 class="item__title">Название категории</h6>
+                    <p class="item__text">134 товара</p>
+                  </div>
+                </div>
+                <div class="item__wrapper">
+                  <div class="item__img-box">
+                    <img class="item__img" src="./img/23.jpg" alt="picture">
+                  </div>
+                  <div class="item__box">
+                    <h6 class="item__title">Название категории</h6>
+                    <p class="item__text">134 товара</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__opacity"></div>
+            </div>
+          </div>
+        </section>
+        <section class="field">
+          <aside class="aside"></aside>
+          <div class="cards"></div>
+        </section>
+      </main>
     </div>
     <footer class="footer"></footer>
   </div>
   <script src="./js/script.js"></script>
 </body>
+
 </html>

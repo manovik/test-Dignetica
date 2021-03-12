@@ -1,0 +1,62 @@
+.item {
+  position: relative;
+  &__container {
+    display: flex;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    width: 231px;
+    height: 60px;
+    overflow: hidden;
+    &:not(:last-child)::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: #b9b9b9;
+    }
+    & + & {
+      margin-left: 20px;
+    }
+  }
+
+  &__img-box {
+    height: 100%;
+    width: 60px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    height: 100%;
+    padding-left: 10px;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    @include os-400;
+    font-size: 1.4rem;
+    color: #333333;
+  }
+  &__text {    
+    @include os-400;
+    font-size: 1.2rem;
+    color: $b8;
+  }
+  &__opacity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 155px;
+    background: linear-gradient(269.76deg, #FFFFFF 62.83%, rgba(255, 255, 255, 0) 145.7%);
+  }
+}

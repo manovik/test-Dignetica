@@ -1,0 +1,22 @@
+.result {
+  margin-top: 31px;
+  &__top {
+    display: flex;
+    align-items: baseline;
+  }
+  &__title {
+    @include ar-400;
+    font-size: 2.8rem;
+   line-height: 2.8rem;
+    color: #000;
+    padding-right: 35px;
+  }
+  &__text {
+    font-size: 1.4rem;
+    color: $b8;
+    transform: translateY(-2px);
+  }
+  &__search-text--italic {
+    font-style: italic;
+  }
+}

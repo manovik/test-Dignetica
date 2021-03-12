@@ -11,6 +11,42 @@
   &__field-box {
     display: flex;
     width: 90%;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 45px;
+      top: 50%;
+      content: "";
+      width: 1px;
+      height: 17px;
+      transform: translateY(-50%);
+      background-color: #000;
+      opacity: 0.5;
+    }
+  }
+  &__field-img {
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+  &__field-reset {
+    position: absolute;
+    top: 3px;
+    height: 95%;
+    padding: 0 10px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all .5s;
+    &:hover {
+      top: 0px;
+      transform: rotate(180deg);
+      // animation: rotate 1s ease-in-out;
+    }
+  }
+  &__field-reset-img {
+    width: 10px;
   }
   &__input {
     height: 100%;
@@ -18,6 +54,11 @@
     border: 1px solid #c7c7c7;
     border-radius: 5px 0px 0px 5px;
     border-right: none;
+    padding-left: 56px;
+    padding-right: 35px;
+    @include ar-400;
+    font-size: 1.4rem;
+    color: #000;
   }
   &__btn {
     height: 100%;
@@ -39,10 +80,18 @@
   &__btn--clz {
     background-color: transparent;
     width: 11.7rem;
-    border: 1px solid #DEDEDE;
+    border: 1px solid #dedede;
     &:hover {
-      background-color: #DEDEDE;
+      background-color: #dedede;
     }
   }
 }
 
+@keyframes rotate{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}

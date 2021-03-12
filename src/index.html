@@ -21,10 +21,18 @@
         <section class="search">
           <div class="container">
             <div class="search__field">
-              <div class="search__field-box">
-                <input class="search__input" type="text">
+              <form class="search__field-box">
+                <img class="search__field-img" src="./icons/search.png" alt="seach">
+                <button class="search__field-reset" type="reset" style="left: 39ch;">
+
+                  <!-- 39ch is dynamic num counted by 12ch + Math.ceil(characters count in input * 1.41) -->
+                  <!-- max is 182ch -->
+
+                  <img class="search__field-reset-img" src="./icons/cross.png" alt="reset input">
+                </button>
+                <input class="search__input" type="text" value="Запрос пользователя">
                 <button class="search__btn search__btn--srch" type="button">найти</button>
-              </div>
+              </form>
               <button class="search__btn search__btn--clz" type="button">закрыть</button>
             </div>
             <div class="search__results result">
@@ -190,8 +198,9 @@
                 </div>
               </form>
             </aside>
-            <div class="cards">
-            </div>
+            <section class="cards">
+              <h3>Goods</h3>
+            </section>
           </div>
         </section>
       </main>

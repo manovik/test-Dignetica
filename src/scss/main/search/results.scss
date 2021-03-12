@@ -3,11 +3,12 @@
   &__top {
     display: flex;
     align-items: baseline;
+    padding-bottom: 30px;
   }
   &__title {
     @include ar-400;
     font-size: 2.8rem;
-   line-height: 2.8rem;
+    line-height: 2.8rem;
     color: #000;
     padding-right: 35px;
   }

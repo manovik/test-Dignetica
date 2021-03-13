@@ -161,18 +161,16 @@
                     <div class="cost__box">
                       <div class="cost__inputs">
                         <span>от</span>
-                        <input type="text" readonly class="cost__input" value="1 000">
+                        <input class="cost__input" id="minInput" type="text" readonly value="1 000">
                         <span>до</span>
-                        <input type="text" readonly class="cost__input" value="1 000 000">
+                        <input class="cost__input" id="maxInput" type="text" readonly value="1 000 000">
                         <span>P</span>
                       </div>
                       <div class="cost__slider slider">
-                        <div class="slider__bar">
-                          <div class="slider__bar-inner">
-                            <span class="slider__handler slider__handler--left" id="sliderLeftBar"></span>
-                            <span class="slider__handler slider__handler--right" id="sliderRightBar"></span>
-                          </div>
-                        </div>
+                        <span class="slider__bar">
+                          <input class="slider__range" id="rangeMin" type="range" min="1000" max="1000000" value="1000">
+                          <input class="slider__range" id="rangeMax" type="range" min="1000" max="1000000" value="1000000">
+                        </span>
                       </div>
                     </div>
                   </div>

@@ -1,41 +1,39 @@
 .slider {
-  &__bar {
+    position: relative;         // added
     height: 4px;
     width: 100%;
     border-radius: 4px;
     background-color: #000;
     display: flex;
     justify-content: center;
-  }
-  &__bar-inner {
-    width: 90%;
-    position: relative;
-    transform: translateX(-6px);
-  }
-  &__handler {
+  &__bar {
     position: absolute;
     top: -100%;
-    width: 14px;
     height: 14px;
-    border: 2px solid #000000;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: translateY(-1px);
-    cursor: pointer;
-    &--left {
-      left: 0;
-      &:hover {
-        transform: translateY(-1px) scale(1.05);
-        background-color: #ccc;
-      }
-    }
-    &--right {
-      left: 100%;
-      transform: translateY(-1px);
-      &:hover {
-        transform: translateY(-1px) scale(1.05);
-        background-color: #ccc;
-      }
+    width: 95%;
+  }
+  &__range {
+    position: absolute;
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 2px;
+    overflow: hidden;
+    outline: none;
+    pointer-events: none;
+    &::-webkit-slider-thumb {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #000000;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      appearance: none;
+      pointer-events: all;
     }
   }
 }
+
+
+

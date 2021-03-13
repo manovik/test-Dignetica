@@ -1,0 +1,132 @@
+.cards {
+  max-width: 72%;
+  & > h3 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  &__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    @include os-400;
+    font-size: 1.4rem;
+    color: #000;
+  }
+  &__top-text {
+    padding-right: 10px;
+  }
+  &__btn {
+    color: $blue;
+    cursor: pointer;
+    &:not(.cards__btn--active):hover {
+      animation: jump 1s infinite;
+    }
+    & + & {
+      margin-left: 15px;
+    }
+  }
+  &__btn--active {
+    color: #000;
+    cursor: default;
+  }
+  &__select-box {
+    position: relative;
+    display: inline-block;
+  }
+  &__select-img {
+    position: absolute;
+    height: 10px;
+    top: 45%;
+    right: 9px;
+    transform: rotate(90deg) translateX(-50%);
+  }
+  &__select {
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    width: 50px;
+    height: 33px;
+    padding-left: 10px;
+    appearance: none;
+  }
+  &__clarify-box {
+    padding-top: 13px;
+    margin-bottom: 20px;
+  }
+  &__clarify {
+    display: inline-block;
+    background-color: #fff3d8;
+    border-radius: 3px;
+    @include rob-400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 7px 15px;
+    color: #000000;
+    & + & {
+      margin-left: 10px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4rem;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+  }
+  &__page-number {
+    @include ar-400;
+    font-size: 1.6rem;
+    color: #000;
+    opacity: 0.5;
+    cursor: pointer;
+    &--prev {
+      padding-right: 3rem;
+    }
+    &--active {
+      opacity: 1;
+    }
+    &--separator {
+      margin: 0 4px;
+      cursor: default;
+    }
+  }
+  &__page-btn {
+    margin-left: 20px;
+  }
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(-2px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-1px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

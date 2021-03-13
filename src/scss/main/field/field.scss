@@ -1,10 +1,13 @@
 .field {
   .container {
-    display: flex;
     & > h3 {
       width: 0;
       height: 0;
       overflow: hidden;
     }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

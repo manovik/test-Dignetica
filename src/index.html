@@ -101,106 +101,307 @@
         </section>
         <section class="field">
           <div class="container">
-            <h3>Aside menu</h3>
-            <aside class="aside">
-              <div class="aside__box category">
-                <h5 class="category__title">Все категории</h5>
-                <ul class="category__box">
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то нашли что-тонашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Категория в которой нашли что-то <span class="category__num">(xxx)</span>
-                    </a>
-                  </li>
-                  <li class="category__list-item">
-                    <a class="category__item">
-                      Ещё 10 категорий...
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class="aside__form form">
-                <div class="form__cost cost">
-                  <h5 class="cost__title">Цена, валюта</h5>
-                  <div class="cost__box">
-                    <div class="cost__inputs">
-                      <span>от</span>
-                      <input type="text" readonly class="cost__input" value="1 000">
-                      <span>до</span>
-                      <input type="text" readonly class="cost__input" value="1 000 000">
-                      <span>P</span>
-                    </div>
-                    <div class="cost__slider slider">
-                      <div class="slider__bar">
-                        <div class="slider__bar-inner">
-                          <span class="slider__handler slider__handler--left"></span>
-                          <span class="slider__handler slider__handler--right"></span>
+            <h3>item selection field</h3>
+            <div class="field__wrapper">
+              <aside class="aside">
+                <div class="aside__box category">
+                  <h5 class="category__title">Все категории</h5>
+                  <ul class="category__box">
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то нашли что-тонашли что-то <span
+                          class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Категория в которой нашли что-то <span class="category__num">(xxx)</span>
+                      </a>
+                    </li>
+                    <li class="category__list-item">
+                      <a class="category__item">
+                        Ещё 10 категорий...
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="aside__form form">
+                  <div class="form__cost cost">
+                    <h5 class="cost__title">Цена, валюта</h5>
+                    <div class="cost__box">
+                      <div class="cost__inputs">
+                        <span>от</span>
+                        <input type="text" readonly class="cost__input" value="1 000">
+                        <span>до</span>
+                        <input type="text" readonly class="cost__input" value="1 000 000">
+                        <span>P</span>
+                      </div>
+                      <div class="cost__slider slider">
+                        <div class="slider__bar">
+                          <div class="slider__bar-inner">
+                            <span class="slider__handler slider__handler--left" id="sliderLeftBar"></span>
+                            <span class="slider__handler slider__handler--right" id="sliderRightBar"></span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="form__brand brand">
+                    <h5 class="brand__title">Бренды</h5>
+                    <label class="brand__label">
+                      <input class="brand__checkbox" type="checkbox" name="brand1" id="brand1">
+                      <div class="brand__custom-check"></div>
+                      Бренд
+                      <span class="brand__num">(xxx)</span>
+                    </label>
+                    <label class="brand__label">
+                      <input class="brand__checkbox" type="checkbox" name="brand2" id="brand2">
+                      <div class="brand__custom-check"></div>
+                      Бренд
+                      <span class="brand__num">(x)</span>
+                    </label>
+                    <label class="brand__label">
+                      <input class="brand__checkbox" type="checkbox" name="brand3" id="brand3">
+                      <div class="brand__custom-check"></div>
+                      Бренд
+                      <span class="brand__num">(x xxx)</span>
+                    </label>
+                    <button class="brand__reset" type="reset">Очистить</button>
+                  </div>
+                </form>
+              </aside>
+              <section class="cards">
+                <h3>Goods</h3>
+                <div class="cards__top">
+                  <div class="cards__box">
+                    <span class="cards__top-text">Сортировать по:</span>
+                    <button class="cards__btn cards__btn--active" type="button">популярности</button>
+                    <button class="cards__btn" type="button">сначала дешевые</button>
+                    <button class="cards__btn" type="button">сначала дорогие</button>
+                  </div>
+                  <div class="cards__box">
+                    <span class="cards__top-text">показывать по</span>
+                    <div class="cards__select-box">
+                      <img class="cards__select-img" src="./icons/angle-r.png" alt="select items">
+                      <select class="cards__select" name="cardsCount" id="cardsCount">
+                        <option value="8">8</option>
+                        <option value="24" selected>24</option>
+                        <option value="48">48</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <div class="form__brand brand">
-                  <h5 class="brand__title">Бренды</h5>
-                  <label class="brand__label">
-                    <input class="brand__checkbox" type="checkbox" name="brand1" id="brand1">
-                    <div class="brand__custom-check"></div>
-                    Бренд
-                    <span class="brand__num">(xxx)</span>
-                  </label>
-                  <label class="brand__label">
-                    <input class="brand__checkbox" type="checkbox" name="brand2" id="brand2">
-                    <div class="brand__custom-check"></div>
-                    Бренд
-                    <span class="brand__num">(x)</span>
-                  </label>
-                  <label class="brand__label">
-                    <input class="brand__checkbox" type="checkbox" name="brand3" id="brand3">
-                    <div class="brand__custom-check"></div>
-                    Бренд
-                    <span class="brand__num">(x xxx)</span>
-                  </label>
-                  <button class="brand__reset" type="reset">Очистить</button>
+                <div class="cards__clarify-box">
+                  <span class="cards__clarify">Уточнение</span>
+                  <span class="cards__clarify">Уточнение</span>
+                  <span class="cards__clarify">Уточнение</span>
+                  <span class="cards__clarify">Уточнение</span>
                 </div>
-              </form>
-            </aside>
-            <section class="cards">
-              <h3>Goods</h3>
-            </section>
+                <div class="cards__wrapper">
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                  <div class="cards__item card">
+                    <div class="card__img-box">
+                      <img class="card__img" src="./img/23.jpg" alt="some item">
+                    </div>
+                    <h4 class="card__title">
+                      Наименование товара, которое не более 2 строк
+                    </h4>
+                    <div class="card__prices">
+                      <p class="card__price card__price--main">
+                        <span class="card__price-value">XX XXX</span><span>,</span><span
+                          class="card__price-currency">$</span>
+                      </p>
+                      <p class="card__price card__price--sec">
+                        <span class="card__price-value">XX XXX</span><span class="card__price-currency">$</span>
+                      </p>
+                    </div>
+                    <button class="card__btn" type="button">кнопка</button>
+                  </div>
+                </div>
+                <div class="cards__pagination">
+                  <button class="cards__page-number cards__page-number--prev">2</button>
+                  <button class="cards__page-number cards__page-number--active">3</button>
+                  <button class="cards__page-number cards__page-number--separator">...</button>
+                  <button class="cards__page-number cards__page-number--last">13</button>
+                  <button class="cards__page-btn" type="button">
+                    <img class="cards__page-btn-img" src="./icons/angle-r.png" alt="next page">
+                  </button>
+                </div>
+              </section>
+            </div>
           </div>
         </section>
       </main>

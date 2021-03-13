@@ -1,0 +1,35 @@
+.category {
+  padding-bottom: 45px;
+  &__title {
+    @include ar-400;
+    font-size: 1.4rem;
+    color: #000000;
+    padding-bottom: 16px;
+  }
+  &__box {
+    max-width: 260px;
+  }
+  &__list-item {
+    & + & {
+      margin-top: 1.3rem;
+    }
+  }
+  &__item {
+    display: block;
+    height: 1.4rem;
+    overflow: hidden;
+    width: 33ch;
+    position: relative;
+    @include ar-400;
+    font-size: 1.4rem;
+    color: $blue;
+  }
+  &__num {
+    position: absolute;
+    top: 50%;
+    transform: translate(-3px, -27%);
+    right: 0;
+    font-size: 1.2rem;
+    color: #ababab;
+  }
+}

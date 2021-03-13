@@ -1,0 +1,63 @@
+.brand {
+  position: relative;
+  &__title {
+    @include os-700;
+    font-size: 1.4rem;
+    color: #000;
+  }
+  &__label {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    @include os-400;
+    font-size: 1.4rem;
+    color: #000000;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__checkbox {
+    appearance: none;
+    &:checked ~ div {
+      position: relative;
+      background-color: #ccc;
+      &::after {
+        content: "✔";
+        color: #000;
+        position: absolute;
+        top: -2px;
+        left: 1px;
+      }
+    }
+  }
+  &__custom-check {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  &__num {
+    font-size: 1.2rem;
+    color: #ababab;
+    padding-left: 2px;
+  }
+  &__reset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include ar-400;
+    font-size: 1rem;
+    text-decoration-line: underline;
+    color: #333333;
+    opacity: 0.5;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

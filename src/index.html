@@ -23,14 +23,14 @@
             <div class="search__field">
               <form class="search__field-box">
                 <img class="search__field-img" src="./icons/search.png" alt="seach">
-                <button class="search__field-reset" type="reset" style="left: 39ch;">
+                <button class="search__field-reset" id="searchButton" type="reset">
 
                   <!-- 39ch is dynamic num counted by 12ch + Math.ceil(characters count in input * 1.41) -->
                   <!-- max is 182ch -->
 
                   <img class="search__field-reset-img" src="./icons/cross.png" alt="reset input">
                 </button>
-                <input class="search__input" type="text" value="Запрос пользователя">
+                <input class="search__input" id="searchField" type="text" placeholder="Ввведите запрос">
                 <button class="search__btn search__btn--srch" type="button">найти</button>
               </form>
               <button class="search__btn search__btn--clz" type="button">закрыть</button>
@@ -161,15 +161,22 @@
                     <div class="cost__box">
                       <div class="cost__inputs">
                         <span>от</span>
-                        <input class="cost__input" id="minInput" type="text" readonly value="1 000">
+                        <div class="cost__input-box">
+                          <p class="cost__input-mask" id="minInputMask">1000</p>
+                          <input class="cost__input" id="minInput" type="text" readonly>
+                        </div>
                         <span>до</span>
-                        <input class="cost__input" id="maxInput" type="text" readonly value="1 000 000">
+                        <div class="cost__input-box">
+                          <p class="cost__input-mask" id="maxInputMask">1000000</p>
+                          <input class="cost__input" id="maxInput" type="text" readonly>
+                        </div>
                         <span>P</span>
                       </div>
                       <div class="cost__slider slider">
                         <span class="slider__bar">
                           <input class="slider__range" id="rangeMin" type="range" min="1000" max="1000000" value="1000">
-                          <input class="slider__range" id="rangeMax" type="range" min="1000" max="1000000" value="1000000">
+                          <input class="slider__range" id="rangeMax" type="range" min="1000" max="1000000"
+                            value="1000000">
                         </span>
                       </div>
                     </div>

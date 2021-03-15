@@ -1,17 +1,17 @@
 .category {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   &__title {
     @include ar-400;
     font-size: 1.4rem;
     color: #000000;
-    padding-bottom: 16px;
+    padding-bottom: 1.4rem;
   }
   &__box {
     max-width: 260px;
   }
   &__list-item {
     & + & {
-      margin-top: 1.3rem;
+      margin-top: 1.6rem;
     }
   }
   &__item {

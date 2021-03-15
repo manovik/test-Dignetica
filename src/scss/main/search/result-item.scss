@@ -3,12 +3,18 @@
   &__container {
     display: flex;
   }
+  &__container-wrapper {
+    overflow: hidden;
+  }
   &__wrapper {
     position: relative;
-    display: flex;
+    display: inline-flex;
     width: 231px;
     height: 60px;
     overflow: hidden;
+    flex-shrink: 0;
+    cursor: grab;
+    user-select: none;
     &:not(:last-child)::after {
       position: absolute;
       top: 0;
@@ -22,7 +28,6 @@
       margin-left: 20px;
     }
   }
-
   &__img-box {
     height: 100%;
     width: 60px;
@@ -58,7 +63,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 155px;
+    width: 125px;
     background: linear-gradient(269.76deg, #FFFFFF 62.83%, rgba(255, 255, 255, 0) 145.7%);
   }
 }

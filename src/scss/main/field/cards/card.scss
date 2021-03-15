@@ -24,10 +24,10 @@
   &__title {
     @include ar-400;
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     letter-spacing: 0.01rem;
     overflow: hidden;
-    max-height: 3.2rem;
+    max-height: 3.6rem;
     color: #000000;
     margin-top: 10px;
     margin-bottom: 18px;
@@ -49,16 +49,19 @@
       text-decoration: line-through;
       font-size: 1.4rem;
       color: #A9A9A9;
+      .card__price-currency {
+        padding-left: .1rem;
+      }
     }
     & + & {
-      margin-left: 1.6rem;
+      margin-left: 1.7rem;
     }
   }
   &__price-value {
-    padding-right: 2px;
+    padding-right: .4rem;
   }
   &__price-currency {
-    padding-left: 2px;
+    padding-left: .4rem;
   }
   &__btn {
     @include btn-acc;

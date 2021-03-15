@@ -1,5 +1,5 @@
 .cards {
-  max-width: 72%;
+  max-width: 72.3%;
   & > h3 {
     width: 0;
     height: 0;
@@ -15,8 +15,11 @@
     font-size: 1.4rem;
     color: #000;
   }
+  &__box--select {
+    transform: translate(0, -1.1rem);
+  }
   &__top-text {
-    padding-right: 10px;
+    padding-right: .5rem;
   }
   &__btn {
     color: $blue;
@@ -25,7 +28,7 @@
       animation: jump 1s infinite;
     }
     & + & {
-      margin-left: 15px;
+      margin-left: 1.2rem;
     }
   }
   &__btn--active {
@@ -52,7 +55,7 @@
     appearance: none;
   }
   &__clarify-box {
-    padding-top: 13px;
+    padding-top: 4px;
     margin-bottom: 20px;
   }
   &__clarify {
@@ -65,19 +68,19 @@
     padding: 7px 15px;
     color: #000000;
     & + & {
-      margin-left: 10px;
+      margin-left: 7px;
     }
   }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 4rem;
+    row-gap: 3.9rem;
   }
   &__pagination {
     display: flex;
     align-items: center;
-    margin-top: 42px;
+    margin-top: 40px;
   }
   &__page-number {
     @include ar-400;
@@ -86,13 +89,13 @@
     opacity: 0.5;
     cursor: pointer;
     &--prev {
-      padding-right: 3rem;
+      padding-right: 2.8rem;
     }
     &--active {
       opacity: 1;
     }
     &--separator {
-      margin: 0 4px;
+      margin: 0 9px;
       cursor: default;
     }
   }
